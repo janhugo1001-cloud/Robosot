@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="small_arm" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find small_arm_description)/urdf/small_arm.xacro" />
+  <xacro:include filename="$(find small_arm_description)/urdf/small_arm.ros2_control.xacro" />
+  
+  <link name="world"/>
+
+  <xacro:small_arm parent="world">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:small_arm>
+
+  <!-- <xacro:small_arm_ros2_control name="small_arm_ros2_control" /> -->
+</robot>

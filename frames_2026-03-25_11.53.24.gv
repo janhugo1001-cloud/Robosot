@@ -1,0 +1,10 @@
+digraph G {
+"base_link" -> "rplidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 33.532\nBuffer length: 0.06\nMost recent transform: 1774443199.336321\nOldest transform: 1774443199.276676\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 7.628\nBuffer length: 4.851\nMost recent transform: 1774443205.056777\nOldest transform: 1774443200.205986\n"];
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 33.532\nBuffer length: 0.06\nMost recent transform: 1774443199.336321\nOldest transform: 1774443199.276676\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1774443204.273812"[ shape=plaintext ] ;
+}->"map";
+}
